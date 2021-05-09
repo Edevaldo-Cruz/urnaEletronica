@@ -126,7 +126,7 @@ body {
     height: 50px;
 }
 
-.digito {
+.numero {
     display: inline-block;
     width: 30px;
     height: 40px;
@@ -144,7 +144,7 @@ body {
 }
 .sup-left-4 {
     flex: 1;
-    line-height: 30px
+    line-height: 30px;
 }
 
 .sup-left-1 {
