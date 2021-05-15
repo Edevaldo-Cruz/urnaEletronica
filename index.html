@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Urna Eletronica</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="urna">
-        <div class="tela">
-            <div class="tela-superior">
-                <div class="tela-superior-left">
-                    <div class="sup-left-1">
-                        <span>SEU VOTO PARA</span>
-                    </div>
-                    <div class="sup-left-2">
-                        <span>VEREADOR</span>
-                    </div>
-                    <div class="sup-left-3">
-                       <div class="numero pisca"></div>
-                       <div class="numero"></div> 
-                    </div>
-                    <div class="sup-left-4">
-                        Nome: Mr Bean <br/>
-                        Partido: XXX <br/>
-                        Vice-Prefeito: Kiko Tesouro
-                    </div>
-                </div>
-                <div class="tela-superior-right">
-                    <div class="img">
-                        <img src="img/caric1.jpg" alt="Candidato">
-                        Prefeito
-                    </div>
-                    <div class="img">
-                        <img src="img/caric2.jpg" alt="Candidato">
-                        Vice-Prefeito
-                    </div>
-                </div>
+      <div class="tela">
+        <div class="tela-superior">
+          <div class="tela-superior-left">
+            <div class="sup-left-1">
+              <span>SEU VOTO PARA</span>
             </div>
-            <div class="tela-inferior">
-                Aperte a tecla <br/>
-                CONFIMA para CONFIMAR este voto<br/>
-                CORRIGE para REINICIAR este voto
+            <div class="sup-left-2">
+              <span>VEREADOR</span>
             </div>
+            <div class="sup-left-3">
+              <div class="numero pisca"></div>
+              <div class="numero"></div>
+            </div>
+            <div class="sup-left-4">
+              Nome: Mr Bean <br />
+              Partido: XXX <br />
+              Vice-Prefeito: Kiko Tesouro
+            </div>
+          </div>
+          <div class="tela-superior-right">
+            <div class="img">
+              <img src="img/caric1.jpg" alt="Candidato" />
+              Prefeito
+            </div>
+            <div class="img">
+              <img src="img/caric2.jpg" alt="Candidato" />
+              Vice-Prefeito
+            </div>
+          </div>
         </div>
-        <script> src="script.js"</script>
-        <div class="teclado">  
-            <div class="teclado-linha">
-                <div class="botao" onclick= "clicou ('1')">1</div>  
-                <div class="botao" onclick= "clicou ('2')">2</div>
-                <div class="botao" onclick= "clicou ('3')">3</div>
-            </div>   
-            <div class="teclado-linha">
-                <div class="botao" onclick="clicou ('4')">4</div>
-                <div class="botao" onclick="clicou ('5')">5</div>
-                <div class="botao" onclick="clicou ('6')">6</div>
-            </div> 
-            <div class="teclado-linha">
-                <div class="botao" onclick="clicou ('7')">7</div>
-                <div class="botao" onclick="clicou ('8')">8</div>
-                <div class="botao" onclick="clicou ('9')">9</div>
-            </div> 
-            <div class="teclado-linha">
-                <div class="botao" onclick="clicou ('0')">0</div>
-            </div>
-            <div class="teclado-linha">
-                <div class="botao-branco"  onclick="branco()">BRANCO</div>
-                <div class="botao-corrige" onclick="corrige()">CORRIGE</div>
-                <div class="botao-confirma" onclick="confirma()">CONFIRMA</div>
-            </div> 
-
+        <div class="tela-inferior">
+          Aperte a tecla <br />
+          CONFIMA para CONFIMAR este voto, CORRIGE para REINICIAR este voto.
         </div>
-
+      </div>
+      <script>
+        src = "script.js";
+      </script>
+      <div class="teclado">
+        <div class="teclado-linha">
+          <div class="botao" onclick="clicou ('1')">1</div>
+          <div class="botao" onclick="clicou ('2')">2</div>
+          <div class="botao" onclick="clicou ('3')">3</div>
+        </div>
+        <div class="teclado-linha">
+          <div class="botao" onclick="clicou ('4')">4</div>
+          <div class="botao" onclick="clicou ('5')">5</div>
+          <div class="botao" onclick="clicou ('6')">6</div>
+        </div>
+        <div class="teclado-linha">
+          <div class="botao" onclick="clicou ('7')">7</div>
+          <div class="botao" onclick="clicou ('8')">8</div>
+          <div class="botao" onclick="clicou ('9')">9</div>
+        </div>
+        <div class="teclado-linha">
+          <div class="botao" onclick="clicou ('0')">0</div>
+        </div>
+        <div class="teclado-linha">
+          <div class="botao-branco" onclick="branco()">BRANCO</div>
+          <div class="botao-corrige" onclick="corrige()">CORRIGE</div>
+          <div class="botao-confirma" onclick="confirma()">CONFIRMA</div>
+        </div>
+      </div>
     </div>
     <script src="etapas.js"></script>
-    <script src="script.js"></script>   
-       
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
