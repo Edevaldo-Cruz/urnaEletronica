@@ -8,124 +8,119 @@
     <title>Urna Eletronica</title>
   </head>
   <body>
-      
-      <h1>Simulador da Urna Eletronica Votação Municipal.</h1>
-      <div class="box"> 
-    <div>
-      <table class="tabela">         
-            <tr>
-              <td>Vereador</td>
-              <td>Número</td>
-            </tr>
-            <tr>
-              <td>João João</td>
-              <td>12345</td>
-            </tr>
-            <tr>
-              <td>Seu Zé</td>
-              <td>71717</td>
-            </tr>
-            <tr>
-              <td>Seu Madruga</td>
-              <td>91919</td>
-            </tr>
-            <tr>
-              <td>Mr Bean/Kiko</td>
-              <td>99</td>
-            </tr>
-            <tr>
-              <td>Seu Barriga</td>
-              <td>21212</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-        </tr>
-        <tr>
-          <td>Prefeito</td>
-          <td>Número</td>
-        </tr>
-        <tr>
-          <td>Prof. Raimundo/Zé Bonitinho</td>
-          <td>22</td>
-        </tr>
-        <tr>
-          <td>Mr Bean/Kiko</td>
-          <td>99</td>
-        </tr>
-      </table>
-      <br><br />
-        <br><br />
-      
-      </table>
-    </div>
-    <div class="urna">
-      <div class="tela">
-        <div class="tela-superior">
-          <div class="tela-superior-left">
-            <div class="sup-left-1">
-              <span>SEU VOTO PARA</span>
+    <h1>Simulador da Urna Eletronica Votação Municipal.</h1>
+    <div class="box">
+      <div>
+        <table class="tabela">
+          <tr>
+            <td>Vereador</td>
+            <td>Número</td>
+          </tr>
+          <tr>
+            <td>João João</td>
+            <td>12345</td>
+          </tr>
+          <tr>
+            <td>Seu Zé</td>
+            <td>71717</td>
+          </tr>
+          <tr>
+            <td>Seu Madruga</td>
+            <td>91919</td>
+          </tr>
+          <tr>
+            <td>Mr Bean/Kiko</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>Seu Barriga</td>
+            <td>21212</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Prefeito</td>
+            <td>Número</td>
+          </tr>
+          <tr>
+            <td>Prof. Raimundo/Zé Bonitinho</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>Mr Bean/Kiko</td>
+            <td>99</td>
+          </tr>
+        </table>
+      </div>
+      <div class="urna">
+        <div class="tela">
+          <div class="tela-superior">
+            <div class="tela-superior-left">
+              <div class="sup-left-1">
+                <span>SEU VOTO PARA</span>
+              </div>
+              <div class="sup-left-2">
+                <span>VEREADOR</span>
+              </div>
+              <div class="sup-left-3">
+                <div class="numero pisca"></div>
+                <div class="numero"></div>
+              </div>
+              <div class="sup-left-4">
+                Nome: Mr Bean <br />
+                Partido: XXX <br />
+                Vice-Prefeito: Kiko Tesouro
+              </div>
             </div>
-            <div class="sup-left-2">
-              <span>VEREADOR</span>
-            </div>
-            <div class="sup-left-3">
-              <div class="numero pisca"></div>
-              <div class="numero"></div>
-            </div>
-            <div class="sup-left-4">
-              Nome: Mr Bean <br />
-              Partido: XXX <br />
-              Vice-Prefeito: Kiko Tesouro
+            <div class="tela-superior-right">
+              <div class="img">
+                <img src="img/caric1.jpg" alt="Candidato" />
+                Prefeito
+              </div>
+              <div class="img">
+                <img src="img/caric2.jpg" alt="Candidato" />
+                Vice-Prefeito
+              </div>
             </div>
           </div>
-          <div class="tela-superior-right">
-            <div class="img">
-              <img src="img/caric1.jpg" alt="Candidato" />
-              Prefeito
-            </div>
-            <div class="img">
-              <img src="img/caric2.jpg" alt="Candidato" />
-              Vice-Prefeito
-            </div>
+          <div class="tela-inferior">
+            Aperte a tecla <br />
+            CONFIMA para CONFIMAR este voto, CORRIGE para REINICIAR este voto.
           </div>
         </div>
-        <div class="tela-inferior">
-          Aperte a tecla <br />
-          CONFIMA para CONFIMAR este voto, CORRIGE para REINICIAR este voto.
+        <script>
+          src = "script.js";
+        </script>
+        <div class="teclado">
+          <div class="teclado-linha">
+            <div class="botao" onclick="clicou ('1')">1</div>
+            <div class="botao" onclick="clicou ('2')">2</div>
+            <div class="botao" onclick="clicou ('3')">3</div>
+          </div>
+          <div class="teclado-linha">
+            <div class="botao" onclick="clicou ('4')">4</div>
+            <div class="botao" onclick="clicou ('5')">5</div>
+            <div class="botao" onclick="clicou ('6')">6</div>
+          </div>
+          <div class="teclado-linha">
+            <div class="botao" onclick="clicou ('7')">7</div>
+            <div class="botao" onclick="clicou ('8')">8</div>
+            <div class="botao" onclick="clicou ('9')">9</div>
+          </div>
+          <div class="teclado-linha">
+            <div class="botao" onclick="clicou ('0')">0</div>
+          </div>
+          <div class="teclado-linha">
+            <div class="botao-branco" onclick="branco()">BRANCO</div>
+            <div class="botao-corrige" onclick="corrige()">CORRIGE</div>
+            <div class="botao-confirma" onclick="confirma()">CONFIRMA</div>
+          </div>
         </div>
       </div>
-      <script>
-        src = "script.js";
-      </script>
-      <div class="teclado">
-        <div class="teclado-linha">
-          <div class="botao" onclick="clicou ('1')">1</div>
-          <div class="botao" onclick="clicou ('2')">2</div>
-          <div class="botao" onclick="clicou ('3')">3</div>
-        </div>
-        <div class="teclado-linha">
-          <div class="botao" onclick="clicou ('4')">4</div>
-          <div class="botao" onclick="clicou ('5')">5</div>
-          <div class="botao" onclick="clicou ('6')">6</div>
-        </div>
-        <div class="teclado-linha">
-          <div class="botao" onclick="clicou ('7')">7</div>
-          <div class="botao" onclick="clicou ('8')">8</div>
-          <div class="botao" onclick="clicou ('9')">9</div>
-        </div>
-        <div class="teclado-linha">
-          <div class="botao" onclick="clicou ('0')">0</div>
-        </div>
-        <div class="teclado-linha">
-          <div class="botao-branco" onclick="branco()">BRANCO</div>
-          <div class="botao-corrige" onclick="corrige()">CORRIGE</div>
-          <div class="botao-confirma" onclick="confirma()">CONFIRMA</div>
-        </div>
-      </div>
+      <script src="etapas.js"></script>
+      <script src="script.js"></script>
     </div>
-    <script src="etapas.js"></script>
-    <script src="script.js"></script>
-      </div>
   </body>
 </html>
